@@ -1,0 +1,17 @@
+﻿<Window x:Class="WpfApp4.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp4"
+        mc:Ignorable="d"
+        Title="Произведение чисел" Height="450" Width="800" FontFamily="Times New Roman" FontSize="16">
+    <Grid>
+        <Label Content="Введите количество чисел&#xD;&#xA;в последовательности:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,31,0,0" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="CountInput" HorizontalAlignment="Center" Height="23" Margin="0,87,0,0" VerticalAlignment="Top" TextAlignment="Center" Width="100"/>
+        <Label Content="Введите числа через&#xD;&#xA;запятую:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,125,0,0" FontSize="18" FontWeight="Bold"/>
+        <TextBox x:Name="NumbersInput" HorizontalAlignment="Center" Height="23" Margin="0,181,0,0" VerticalAlignment="Top" Width="760"/>
+        <Button Content="ПРОВЕРИТЬ" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Height="30" Margin="0,233,0,0" Click="OnCheckClick" FontWeight="Bold" FontSize="14" Cursor="Hand"/>
+        <Label x:Name="ResultLabel" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="465" Height="65" Margin="0,285,0,0" FontSize="16" FontWeight="Bold" Background="#FFE4E4E4"/>
+    </Grid>
+</Window>

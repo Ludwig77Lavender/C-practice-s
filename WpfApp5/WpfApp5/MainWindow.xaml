@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp5"
+        mc:Ignorable="d"
+        Title="Массив простых чисел" Height="480" Width="800" FontFamily="Times New Roman" FontSize="16" Background="#FFECECEC">
+    <Grid>
+        <!-- Заголовок -->
+        <Label Content="Введите количество простых чисел N:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0" FontSize="18" FontWeight="Bold" Foreground="#FF0055AA"/>
+
+        <!-- Поле для ввода числа N -->
+        <TextBox x:Name="CountInput" HorizontalAlignment="Center" Height="30" Width="100" Margin="0,102,0,302" TextAlignment="Center" FontSize="22" Background="#FFADD8E6" Foreground="#FF003366" BorderBrush="#FF0055AA" FontWeight="Bold"/>
+
+        <!-- Кнопка для запуска процесса -->
+        <Button Content="Заполнить" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="40" Margin="0,177,0,0" Click="OnFillPrimesClick" Background="#FF87CEEB" FontWeight="Bold" Foreground="#FF003366" BorderBrush="#FF0055AA"/>
+
+        <!-- Метка для вывода результатов -->
+        <Label x:Name="ResultLabel" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="700" Height="100" Margin="0,234,0,0" FontSize="16" Foreground="#FF0055AA" Background="#FFCCE5FF" Padding="10" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" BorderThickness="2" BorderBrush="#FF0055AA"/>
+
+        <!-- Вывод ошибки -->
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Width="700" Height="50" Margin="0,358,0,0" FontSize="14" Foreground="Red" FontWeight="Bold" Background="#FFEDF6FF" BorderBrush="#FF0055AA"/>
+    </Grid>
+</Window>
