@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApp5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Массив с кратными индексами" Height="450" Width="800" FontFamily="Times New Roman" FontSize="18">
+    <Grid>
+        <Label Content="Введите размер массива N:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,20,0,0" FontSize="16"/>
+        <TextBox x:Name="NInput" HorizontalAlignment="Center" Height="25" TextAlignment="Center" Margin="0,50,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <Label Content="Введите целое число K:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,90,0,0" FontSize="16"/>
+        <TextBox x:Name="KInput" HorizontalAlignment="Center" Height="25" TextAlignment="Center" Margin="0,120,0,0" VerticalAlignment="Top" Width="100"/>
+
+        <Label Content="Введите элементы массива через запятую:" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,160,0,0" FontSize="16"/>
+        <TextBox x:Name="ArrayInput" HorizontalAlignment="Center" Height="25" Margin="0,190,0,0" VerticalAlignment="Top" Width="500"/>
+
+        <Button Content="ПРОВЕРИТЬ" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Height="30" Margin="0,230,0,0" Click="OnCheckClick" FontSize="14"/>
+
+        <Label x:Name="ResultLabel" Content="" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,280,0,0" Width="500" Height="80" Background="LightGray" FontSize="16" Padding="10"/>
+    </Grid>
+</Window>
