@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Определение дня недели" Height="350" Width="400" FontFamily="Times New Roman" FontSize="14" Background="#FFCE0000">
+    <Grid Background="#FF009ACE">
+        <Label Content="Выберите номер дня недели (1-7):" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,64,0,0" FontSize="16" FontWeight="Bold" Foreground="#FF004AFF"/>
+        <ComboBox x:Name="DayInput" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Margin="0,108,0,0" FontSize="18" Background="#FF00CAFF" BorderBrush="#FF0040FF" Foreground="#FF000556" RenderTransformOrigin="0.504,0.502">
+            <ComboBoxItem Content="1" />
+            <ComboBoxItem Content="2" />
+            <ComboBoxItem Content="3" />
+            <ComboBoxItem Content="4" />
+            <ComboBoxItem Content="5" />
+            <ComboBoxItem Content="6" />
+            <ComboBoxItem Content="7" />
+        </ComboBox>
+        <Button Content="ПРОВЕРИТЬ" HorizontalAlignment="Center" VerticalAlignment="Top" Width="150" Height="30" Click="OnCheckDayClick" BorderBrush="#FF0079FF" Background="#FF0486FF" FontWeight="Bold" Foreground="#FF004AFF" Margin="0,158,0,0"/>
+        <Label x:Name="ResultLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="31,198,0,0" FontSize="16" Foreground="Green" FontWeight="Bold"/>
+        <Label x:Name="ErrorLabel" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="73,235,0,0" FontSize="16" Foreground="Red" FontWeight="Bold"/>
+    </Grid>
+</Window>
+
+
