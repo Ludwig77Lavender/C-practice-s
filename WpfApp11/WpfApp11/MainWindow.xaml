@@ -1,0 +1,33 @@
+﻿<Window x:Class="WpfApp11.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp11"
+        mc:Ignorable="d"
+        Title="Нахождение синусного выражения целого и вещественного числа" Height="500" Width="900" Background="#FFCECECE">
+    <Grid>
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <GroupBox Header="Задание 1" Margin="20" Width="400" Height="350" FontFamily="Times New Roman" FontSize="16">
+                <StackPanel>
+                    <TextBlock Text="Введите натуральное число n:" Margin="0,10"/>
+                    <TextBox Name="InputN1" Margin="0,10"/>
+                    <TextBlock Text="Введите целое значение x:" Margin="0,10"/>
+                    <TextBox Name="InputX1" Margin="0,10"/>
+                    <Button Content="ВЫЧИСЛИТЬ" Click="OnCalculate1" Margin="20,20,20,10" Width="200" Height="50" Background="#FF2BFF00" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold"/>
+                    <TextBlock Name="Result1" TextWrapping="Wrap" Margin="0,10" TextAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Header="Задание 2" Margin="20" Width="400" Height="350" FontFamily="Times New Roman" FontSize="16">
+                <StackPanel>
+                    <TextBlock Text="Введите натуральное число n:" Margin="0,10"/>
+                    <TextBox Name="InputN2" Margin="0,10"/>
+                    <TextBlock Text="Введите вещественное значение x:" Margin="0,10"/>
+                    <TextBox Name="InputX2" Margin="0,10"/>
+                    <Button Content="ВЫЧИСЛИТЬ" Click="OnCalculate2" Margin="20,20,20,10" Width="200" Height="50" Background="#FF2BFF00" FontFamily="Times New Roman" FontSize="20" FontWeight="Bold"/>
+                    <TextBlock Name="Result2" TextWrapping="Wrap" Margin="0,10" TextAlignment="Center" FontSize="16" FontWeight="Bold"/>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
+    </Grid>
+</Window>

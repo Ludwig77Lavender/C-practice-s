@@ -1,0 +1,15 @@
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\bin\Debug\WpfApp12.exe.config
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\bin\Debug\WpfApp12.exe
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\bin\Debug\WpfApp12.pdb
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12.csproj.AssemblyReference.cache
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\MainWindow.g.cs
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\App.g.cs
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12_MarkupCompile.cache
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12_MarkupCompile.lref
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\MainWindow.baml
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12.g.resources
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12.Properties.Resources.resources
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12.csproj.GenerateResource.cache
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12.csproj.CoreCompileInputs.cache
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12.exe
+C:\Users\Артём\Documents\Project\С#\WpfApp12\WpfApp12\obj\Debug\WpfApp12.pdb
