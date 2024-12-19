@@ -1,0 +1,15 @@
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\bin\Debug\WpfApp15.exe.config
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\bin\Debug\WpfApp15.exe
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\bin\Debug\WpfApp15.pdb
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15.csproj.AssemblyReference.cache
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\MainWindow.g.cs
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\App.g.cs
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15_MarkupCompile.cache
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15_MarkupCompile.lref
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\MainWindow.baml
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15.g.resources
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15.Properties.Resources.resources
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15.csproj.GenerateResource.cache
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15.csproj.CoreCompileInputs.cache
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15.exe
+C:\Users\Артём\Documents\Project\С#\WpfApp15\WpfApp15\obj\Debug\WpfApp15.pdb
