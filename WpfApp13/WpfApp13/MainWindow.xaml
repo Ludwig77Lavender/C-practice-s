@@ -1,0 +1,24 @@
+﻿<Window x:Class="WpfApp13.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp13"
+        mc:Ignorable="d"
+        Title="Поэтапная проверка элементов файлов на равенство с использованием System.IO" Height="450" Width="800" FontFamily="Times New Roman" FontSize="14" Background="#FFDADADA">
+    <Grid>
+        <StackPanel Margin="10,10,10,10">
+            <TextBlock Text="Выберите первый файл:" Margin="0, 60, 0, 5" Width="160" FontWeight="Bold"/>
+            <Button Click="ChooseFirstFile_Click" Margin="0, 5" Height="25" Width="200" Background="#FFB7F5A6" FontWeight="Bold">Выбрать файл</Button>
+            <TextBox x:Name="FirstFilePath" Margin="0, 5" Width="535" Background="White" IsReadOnly="True"/>
+
+            <TextBlock Text="Выберите второй файл:" Margin="0, 5" Width="160" FontWeight="Bold"/>
+            <Button Click="ChooseSecondFile_Click" Margin="0, 5" Height="25" Width="200" Background="#FFB7F5A6" FontWeight="Bold">Выбрать файл</Button>
+            <TextBox x:Name="SecondFilePath" Margin="0, 5" Width="535" Background="White" IsReadOnly="True"/>
+
+            <Button Click="CompareFiles_Click" Margin="5" Height="50" Width="200" Background="#FF42FF00" FontWeight="Bold" FontSize="18">Сравнить файлы</Button>
+
+            <TextBox x:Name="ResultTextBlock" Margin="0, 5" TextWrapping="Wrap" Width="535" Background="White" IsReadOnly="True"/>
+        </StackPanel>
+    </Grid>
+</Window>
