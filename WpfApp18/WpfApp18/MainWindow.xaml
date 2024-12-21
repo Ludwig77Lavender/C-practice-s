@@ -1,0 +1,60 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Колледж (звонки на перемены)" Height="400" Width="600"
+        WindowStartupLocation="CenterScreen" ResizeMode="CanResize" MinHeight="400" MinWidth="600">
+
+    <Grid Background="#F0F0F0">
+        <!-- Заголовок -->
+        <TextBlock x:Name="CurrentCollegeName" FontSize="20" FontWeight="Bold" Foreground="DarkBlue"
+                   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="20,20,0,0" />
+
+        <!-- ListView для отображения данных -->
+        <ListView x:Name="ListViewCharacteristics" Background="White" VerticalAlignment="Top"
+                  Margin="20,60,305,0" Height="196">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Название" Width="130" DisplayMemberBinding="{Binding Name}" />
+                    <GridViewColumn Header="Время звонка" Width="125" DisplayMemberBinding="{Binding Time}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <!-- Кнопки навигации -->
+        <Button x:Name="ButtonPrevious" Content="&lt;&lt;" Width="80" Height="40" Margin="20,284,0,0" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF5A7FAB" Foreground="White"
+                FontWeight="Bold" Click="ButtonPrevious_Click" />
+        <Button x:Name="ButtonNext" Content="&gt;&gt;" Width="80" Height="40" Margin="198,284,0,0" 
+                HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FF5A7FAB" Foreground="White"
+                FontWeight="Bold" Click="ButtonNext_Click" />
+
+        <!-- Кнопка изменения -->
+        <Button x:Name="ButtonEdit" Content="Изменить значение выбранной характеристики" 
+                Width="280" Height="40" Margin="0,60,10,0" HorizontalAlignment="Right" 
+                VerticalAlignment="Top" Background="#5A7FAB" Foreground="White" Click="ButtonEdit_Click" 
+                FontFamily="Times New Roman" FontSize="13" />
+
+        <!-- Группа поиска с "legend" -->
+        <GroupBox Header="Найти колледж" HorizontalAlignment="Right" VerticalAlignment="Top" 
+                  Margin="0,160,10,0" Width="280" MinHeight="144" FontSize="14" Foreground="#708090">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="129*" />
+                    <ColumnDefinition Width="139*" />
+                </Grid.ColumnDefinitions>
+
+                <!-- Поиск по названию -->
+                <TextBlock Text="по названию:" FontSize="12" Margin="10,10,0,0" 
+                           HorizontalAlignment="Left" VerticalAlignment="Top" />
+                <TextBox x:Name="TextBoxSearchName" Width="180" Height="20" Margin="10,30,0,0" 
+                         HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextBoxSearchName_TextChanged" Grid.ColumnSpan="2" />
+
+                <!-- Поиск по времени звонка -->
+                <TextBlock Text="по времени звонка:" FontSize="12" Margin="10,60,0,0" 
+                           HorizontalAlignment="Left" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+                <TextBox x:Name="TextBoxSearchTime" Width="80" Height="20" Margin="10,80,0,0" 
+                         HorizontalAlignment="Left" VerticalAlignment="Top" TextChanged="TextBoxSearchTime_TextChanged" />
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>

@@ -1,0 +1,109 @@
+﻿<Window x:Class="WpfApp17.MainWindow" 
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="Иерархия классов: автомобиль, поезд, транспортное средство, экспресс" Height="660" Width="800">
+    <Grid Margin="10">
+        <StackPanel>
+            <GroupBox Header="Транспортное средство" Margin="10">
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="Маршрут:" VerticalAlignment="Center" Width="150"/>
+                        <TextBox x:Name="RouteTextBox" Width="300"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                        <TextBlock Text="Время отправления:" VerticalAlignment="Center" Width="150"/>
+                        <ComboBox x:Name="DepartureTimeComboBox" Width="150">
+                            <ComboBoxItem Content="08:00"/>
+                            <ComboBoxItem Content="10:00"/>
+                            <ComboBoxItem Content="12:00"/>
+                            <ComboBoxItem Content="14:00"/>
+                            <ComboBoxItem Content="16:00"/>
+                        </ComboBox>
+
+                        <TextBlock Text="Время прибытия:" VerticalAlignment="Center" Width="150" Margin="10,0,0,0"/>
+                        <ComboBox x:Name="ArrivalTimeComboBox" Width="150">
+                            <ComboBoxItem Content="10:00"/>
+                            <ComboBoxItem Content="12:00"/>
+                            <ComboBoxItem Content="14:00"/>
+                            <ComboBoxItem Content="16:00"/>
+                            <ComboBoxItem Content="18:00"/>
+                        </ComboBox>
+                    </StackPanel>
+
+                    <GroupBox Header="Автомобиль" Margin="10">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Место отправления:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="CarDepartureTextBox" Width="300"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Место прибытия:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="CarArrivalTextBox" Width="300"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Количество мест:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="CarSeatsTextBox" Width="150"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Перевозчик:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="CarCarrierTextBox" Width="300"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </GroupBox>
+
+                    <GroupBox Header="Поезд" Margin="10">
+                        <StackPanel>
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Номер:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="TrainNumberTextBox" Width="300"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Название:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="TrainNameTextBox" Width="300"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Сидячие вагоны:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="TrainSeatsCarriagesTextBox" Width="150"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Плацкартные вагоны:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="TrainPlatzCarriagesTextBox" Width="150"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Купейные вагоны:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="TrainCoupeCarriagesTextBox" Width="150"/>
+                            </StackPanel>
+
+                            <StackPanel Orientation="Horizontal" Margin="5">
+                                <TextBlock Text="Люкс вагоны:" VerticalAlignment="Center" Width="150"/>
+                                <TextBox x:Name="TrainLuxuryCarriagesTextBox" Width="150"/>
+                            </StackPanel>
+
+                            <GroupBox Header="Экспресс" Margin="10">
+                                <StackPanel>
+                                    <StackPanel Orientation="Horizontal" Margin="5">
+                                        <TextBlock Text="Развиваемая скорость (км/ч):" VerticalAlignment="Center" Width="200"/>
+                                        <TextBox x:Name="ExpressSpeedTextBox" Width="150"/>
+                                    </StackPanel>
+                                </StackPanel>
+                            </GroupBox>
+                        </StackPanel>
+                    </GroupBox>
+                </StackPanel>
+            </GroupBox>
+
+            <Button x:Name="ShowInfoButton" Content="Вывод информации о транспортном средстве" Height="40" Width="300" HorizontalAlignment="Center" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
